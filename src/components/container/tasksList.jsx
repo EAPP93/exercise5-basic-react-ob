@@ -1,8 +1,10 @@
 import React,{useEffect,useState} from 'react';
 import Taskform from '../pure/form/taskform'
 import TaskElement from '../pure/task';
-import Task from '../models/task.class.js'
-import { LEVELS } from '../models/levels.enum';
+
+/**impor class */
+import {LEVELS} from '../../models/levels.enum.js'
+import Task from '../../models/task.class.js';
 
 const Taskslist = () => {
 

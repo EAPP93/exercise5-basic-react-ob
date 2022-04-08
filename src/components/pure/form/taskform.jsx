@@ -3,9 +3,8 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as yup from 'yup';
 
 /**impor class */
-//import Task from '../../models/task.class';
-import {LEVELS} from '../../models/levels.enum.js'
-import Task from '../../models/task.class.js';
+import {LEVELS} from '../../../models/levels.enum.js'
+import Task from '../../../models/task.class.js';
 
 
 
@@ -86,8 +85,8 @@ const Taskform = ({addTask}) => {
 
                         <label htmlFor="level">Level</label>
                         <Field className='mb-4' as="select" name="level">
-                            <option value={LEVELS.BLOCKING}>BLOCKING</option>
                             <option vvalue={LEVELS.NORMAL}>NORMAL</option>
+                            <option value={LEVELS.BLOCKING}>BLOCKING</option>
                             <option value={LEVELS.URGENTE}>URGENTE</option>
                         </Field>
                         {
